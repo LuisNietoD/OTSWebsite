@@ -1,0 +1,90 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1E1E1E; /* Fond légèrement plus clair */
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.subtitle {
+  color: #bbbbbb;
+  margin-top: 0.5rem;
+}
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #4A90E2; /* Bleu doux, remplace le jaune */
+}
+
+p {
+  font-size: 1rem;
+  color: #dddddd;
+  margin-bottom: 1rem;
+}
+
+/* Palette styles */
+.palette {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.color {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out;
+}
+
+.color:hover {
+  transform: scale(1.1);
+}
+
+.color[data-color="#5B5A56"] { background-color: #5B5A56; }
+.color[data-color="#A68A64"] { background-color: #A68A64; }
+.color[data-color="#1E1C1B"] { background-color: #1E1C1B; }
+/* Add other color styles here as needed */
+
+/* Footer alignment for better spacing */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Particles Background */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place derrière tout le contenu */
+  background-color: #1E1E1E; /* Couleur de fond */
+}
